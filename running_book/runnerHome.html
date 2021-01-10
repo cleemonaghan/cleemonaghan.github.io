@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Running Book</title>
+        <link rel="icon" type="image/png" href="shoe_icon2.png" sizes="32x32">
+        <link rel="stylesheet" href="package/css/bulma.css">
+    </header>
+
+    <body class="has-navbar-fixed-top">
+
+        <!-- The Nav Bar Menu-->
+        <nav id="navbar" role="navigation" class="bd-navbar navbar has-shadow has-background-primary is-bold is-fixed-top is-spaced">
+            <div class="navbar-menu">
+                <div class="navbar-brand">
+                <a class="navbar-item" href="runnerHome.html">
+                    <p class="title is-family-sans-serif">Running Book</p>
+                </a>
+                </div>
+
+          
+              
+          
+                <div id="navMenuDocumentation" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item bd-navbar-item " > <!--Add href="site name" here-->
+                            <span>Dashboard</span>
+                        </a>
+
+                        <a class="navbar-item bd-navbar-item " > <!--Add href="site name" here-->
+                            <span>Training</span>
+                        </a>
+
+                        <a class="navbar-item bd-navbar-item " > <!--Add href="site name" here-->
+                            <span>Explore</span>
+                        </a>
+                    </div>
+            
+                    <div class="navbar-end">
+                        <a class="navbar-item bd-navbar-item " > <!--Add href="site name" here-->
+                            <span>Upload</span>
+                        </a>
+
+                        <a class="navbar-item bd-navbar-item " > <!--Add href="site name" here-->
+                            <span>Profile</span>
+                        </a>
+
+                        <div class="navbar-item buttons " > 
+                            
+                                <a class="button is-link" href="runnerSignUp.html">
+                                    <strong>Sign up</strong>
+                                </a>
+                                <a class="button is-light" href="runnerLogin.html">Log in</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        
+        <div class="columns m-4">
+            <!-- Left side of screen -->
+            <div class="column is-3 is-offset-1 is-hidden-touch"> <!--</div> style="height:90vh; position: sticky; top: 5px;"-->
+                <!-- Profile Box-->
+                <div class="box m-2">
+                    <article class="panel is-primary">
+                        <!-- Profile box -->
+                        <p class="panel-heading has-text-centered">Colin Monaghan</p>
+                        
+                        <div class="panel-block">
+                            <div class="columns is-centered">
+                                <div class='column'>
+                                    <div class='card equal-height has-background-none has-shadow-none'>
+                                      <div class='card-content is-flex is-horizontal-center'>
+                                        <figure class="image is-128x128 m-0">
+                                            <img class=" is-rounded" src="profile_pic.jpg">
+                                        </figure>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        
+                        <article class="panel-block is-mobile">
+                            <div class="container">
+                                <div class="columns is-desktop">
+                                    <div class="column has-text-centered is-one-third">
+                                        <div>
+                                            <p class="header is-small is-size-10-desktop is-size-6-touch">Following</p>
+                                            <p class="title is-small is-mobile is-size-6-desktop is-size-6-touch">3,456</p>
+                                        </div>
+                                    </div>
+                                    <div class="column has-text-centered is-one-third">
+                                        <div>
+                                            <p class="header is-small is-size-10-desktop is-size-6-touch">Followers</p>
+                                            <p class="title is-small is-size-6-desktop is-size-6-touch">123</p>
+                                        </div>
+                                    </div>
+                                    <div class="column has-text-centered is-one-third">
+                                        <div>
+                                            <p class="header is-small is-size-10-desktop is-size-6-touch">Activites</p>
+                                            <p class="title is-small is-size-6-desktop is-size-6-touch">5</p>
+                                        </div>
+                                    </div>            
+                                </div>          
+                            </div>
+                        </article>
+
+                        <article class="panel-block">
+                            <p class="subtitle">Last Activity</p>
+                            <a href="runnerPost.html"><p>Afternoon Run</p></a>
+
+                        </article>
+
+                    </article>
+                </div>
+                <!-- Friends Box-->
+                <div class="box m-2">
+                    <article class="panel is-primary">
+                        <p class="panel-heading has-text-centered">Connections</p>
+                        <p class="panel-tabs">
+                            <a class="is-active">Following</a>
+                            <a>Followers</a>
+                            <a>Explore</a>
+                        </p>
+                        <div class="panel-block">
+                            <p class="control">
+                                <input class="input is-primary" type="text" placeholder="Search">
+                            </p>
+                        </div>
+                        <a class="panel-block">
+                            <spans class="image is-32x32 mr-2">
+                                <img class=" is-rounded" src="profile_pic.jpg">
+                            </spans>
+                            Friend 1
+                        </a>
+                        <a class="panel-block">
+                            <spans class="image is-32x32 mr-2">
+                                <img class=" is-rounded" src="profile_pic.jpg">
+                            </spans>
+                            Friend 2
+                        </a>
+                        <a class="panel-block">
+                            <spans class="image is-32x32 mr-2">
+                                <img class=" is-rounded" src="profile_pic.jpg">
+                            </spans>
+                            Friend 3
+                        </a>
+                        <a class="panel-block">
+                            <spans class="image is-32x32 mr-2">
+                                <img class=" is-rounded" src="profile_pic.jpg">
+                            </spans>
+                            Friend 4
+                        </a>
+                      </article>
+                </div>
+            </div>
+
+            <!-- Right side of screen -->
+            <div class="column is-7">
+                <div class="container">
+                    <!-- Feed -->
+                    <section class="hero is-small is-primary is-bold">
+                        <!-- Feed Title -->
+                        <div class="hero-body">
+                            <h1 class="title">
+                                Feed
+                            </h1>
+                        </div>
+                    </section>
+                    <div class="container"> 
+                        <!-- Feed Media --> 
+                        <div class="box m-1">
+                            <article class="panel has-background-light p-2">
+                                <article class="panel-heading is-mobile">
+                                    <!--Profile Picture and name-->
+                                    <div class="level">
+                                        <div class="level-left">
+                                            <div class="level-item">
+                                                <figure class="image is-64x64 mx-3">
+                                                    <img class="is-rounded" src="profile_pic.jpg">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="level-right">
+                                            <div class="level-item">
+                                                <h4>Colin Monaghan</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!--Activity Title-->
+                                    <div class="level">
+                                        <div class="level-left">
+                                            <div class="level-item">
+                                                <a href="runnerPost.html"><h4 class="header is-size-3-desktop">Afternoon Run with the family</h4></a>
+                                            </div>
+                                        </div>
+                                        <div class="level-right">
+                                            <div class="level-item">
+                                                <h4><small>2h</small></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!--Activity Content-->
+                                <article class="panel-block is-mobile">
+                                    <div class="container">
+                                        <div class="columns">
+                                            <div class="column has-text-centered is-one-third">
+                                                <div>
+                                                    <p class="heading is-small is-size-8-desktop is-size-6-touch">Distance</p>
+                                                    <p class="title is-small is-mobile is-size-3-desktop is-size-6-touch">5.00 mi</p>
+                                                </div>
+                                            </div>
+                                            <div class="column has-text-centered is-one-third">
+                                                <div>
+                                                    <p class="heading is-small is-size-8-desktop is-size-6-touch">Time</p>
+                                                    <p class="title is-small is-size-3-desktop is-size-6-touch">35m 0s</p>
+                                                </div>
+                                            </div>
+                                            <div class="column has-text-centered is-one-third">
+                                                <div>
+                                                    <p class="heading is-small is-size-8-desktop is-size-6-touch">Pace</p>
+                                                    <p class="title is-small is-size-3-desktop is-size-6-touch">5:00 /mi</p>
+                                                </div>
+                                            </div>            
+                                        </div>          
+                                    </div>
+                                </article>
+
+                                <article class="panel-block is-mobile">
+                                    <p class="subtitle has-text-centered is-size-5-desktop is-size-7-touch">
+                                        A sunny sunday run with a light breeze. 
+                                    </p>
+                                </article>
+
+
+                            
+                                <!--Like and Comment Buttons-->
+                                <div class="panel-block is-mobile">
+                                    <div class="level-right m-1">
+                                        <div class="level-item">
+                                            <p class="header is-small mx-2">3 Likes</p>
+                                            <button class="button is-small is-primary">Like</button>
+                                        </div>
+                                        <div class="level-item">
+                                            <p class="header is-small mx-2">2 Comments</p>
+                                            <button class="button is-small is-primary">Comment</button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        
+
+                        <div class="box m-1">
+                            <article class="media has-background-light p-2">
+                                    <!--Profile Picture-->
+                                    <figure class="image is-64x64">
+                                        <img class=" is-rounded" src="profile_pic.jpg">
+                                    </figure>
+                                    <!--Activity Content-->
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <h4><strong>Colin Monaghan</strong> <small>2h</small></h4>
+                                            <h3>Afternoon Run</h3>
+                                            <div class="level">
+                                                <div class="level-item has-text-centered">
+                                                    <div>
+                                                        <p class="heading is-small">Distance</p>
+                                                        <p class="title is-small">5 mi</p>
+                                                    </div>
+                                                </div>
+                                                <div class="level-item has-text-centered">
+                                                    <div>
+                                                        <p class="heading is-small">Time</p>
+                                                        <p class="title is-small">35m 0s</p>
+                                                    </div>
+                                                </div>
+                                                <div class="level-item has-text-centered">
+                                                    <div>
+                                                        <p class="heading is-small">Pace</p>
+                                                        <p class="title is-small">5:00 /mi</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!--Like and Comment Buttons-->
+                                    <div class="level m-1">
+                                        <div class="level-right">
+                                            <a class="level-item">
+                                                <button class="button is-small is-primary">Like</button>
+                                            </a>
+                                            <a class="level-item">
+                                                <button class="button is-small is-primary">Reply</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                            </article>
+                        </div>
+
+                        <div class="box m-1">
+                            <article class="media has-background-light p-2">
+                                    <!--Profile Picture-->
+                                    <figure class="image is-64x64">
+                                        <img class=" is-rounded" src="profile_pic.jpg">
+                                    </figure>
+                                    <!--Activity Content-->
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <h4><strong>Colin Monaghan</strong> <small>2h</small></h4>
+                                            <h3>Afternoon Run</h3>
+                                            <div class="level">
+                                                <div class="level-item has-text-centered">
+                                                    <div>
+                                                        <p class="heading is-small">Distance</p>
+                                                        <p class="title is-small">5 mi</p>
+                                                    </div>
+                                                </div>
+                                                <div class="level-item has-text-centered">
+                                                    <div>
+                                                        <p class="heading is-small">Time</p>
+                                                        <p class="title is-small">35m 0s</p>
+                                                    </div>
+                                                </div>
+                                                <div class="level-item has-text-centered">
+                                                    <div>
+                                                        <p class="heading is-small">Pace</p>
+                                                        <p class="title is-small">5:00 /mi</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!--Like and Reply Buttons-->
+                                    <div class="level m-1">
+                                        <div class="level-right">
+                                            <a class="level-item">
+                                                <button class="button is-small is-primary">Like</button>
+                                            </a>
+                                            <a class="level-item">
+                                                <button class="button is-small is-primary">Reply</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <footer class="footer">
+            <div class="content has-text-centered">
+              <p>
+                <strong>Running Book</strong> by <a href="aboutMe.html">Colin Monaghan</a>.
+              </p>
+            </div>
+        </footer>
+    
+    </body>
+
+</html>
