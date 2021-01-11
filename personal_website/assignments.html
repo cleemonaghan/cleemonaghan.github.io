@@ -1,306 +1,223 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
     <head>
-        <title>Assignments</title>
-        <style>
-            body {
-                margin: 0px;
-            }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments</title>
+    <!-- Bulma Version 0.9.0-->
+    <link rel="stylesheet" type="text/css" href="../bulma.css">
+    <style>
 
-            /* The Heading Font */
-            h1 {
-                color: black;
-                display: block;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            
-            /* The Paragraph Font */
-            p {
-                color: black;
-                display: block;
-                font-family: 'Courier New', Courier, monospace;
-            }
+        /* Table style section */
+        table {
+            border: 1px solid indigo;
+            /*border-collapse: collapse;*/
+            padding: 5px;
+            width: 100%;
 
-            /* Style page content */
-            .container {
-                margin: 0 auto;
-                padding: 5px;
-                max-width: 1200px;
-                transition: margin-left .5s;
-                display: block;
-            }
+        }
 
-            /* Style header content */
-            .header {
-                width: 100%;
-                background-color: indigo;
-                display: block;
-                position: fixed; /* stays in place during scroll */
-            }
+        th, td {
+            border: 1px solid indigo;
+            border-collapse: collapse;
+            padding: 5px;
+        }
 
-            .header-name{
-                color:white;
-                display:inline-block;
-                padding-bottom: 10px;
-                margin: 10px;
-                text-align: center;
-                font-family:Verdana, Geneva, Tahoma, sans-serif;
-                font-size: 44px;
-                font-weight: bold;
-            }
-
-            /* The sidebar menu */
-            .menu {
-                height: 100%; /* Full-height: remove this if you want "auto" height */
-                width: 0px; /* Set the initial width of the sidebar */
-                position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-                z-index: 1; /* Stay on top */
-                top: 0; /* Stay at the top */
-                left: 0;
-                background-color: rgb(64, 64, 64); 
-                overflow-x: hidden; /* Disable horizontal scroll */
-                padding-top: 50px;
-                transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-            }
-
-            /* The navigation menu links (including the menu lists)*/
-            .menu a, .menu-button {
-                width:100%;
-                padding: 8px 8px 8px 16px;
-                text-decoration: none;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 25px;
-                text-align: left;
-                border: none;
-                color: beige;
-                background: none;
-                display: block;
-                cursor: pointer;
-                transition: 0.3s;
-            }
-            .menu-list {
-                display: none;
-                background-color: grey;
-            }
-
-            /* When you mouse over the navigation links, change their color */
-            .menu a:hover, .menu-button:hover {
-                color: rgb(64, 64, 64);
-                background-color: beige;
-            }
-
-            /* Position and style the close button (top right corner) */
-            .menu .closebtn {
-                text-align: right;
-                position: absolute;
-                top: 0;
-                right: 0px;
-                font-size: 30px;
-            }
-
-            /* Position and style the menu button (top left corner) */
-            .open-menu-button {
-                text-align: center;
-                position: static;
-                border: none;
-                margin: 10px;
-                background: none;
-                display: inline-block;
-                
-            }
-            
-            .menu-icon {
-                width: 35px;
-                height: 5px;
-                background-color: beige;
-                margin: 6px 0;
-            }
-
-            /* On smaller screens, where height is less than 450px, change 
-            the style of the sidebar (less padding and a smaller font size) */
-            @media screen and (max-height: 450px) {
-                .menu {padding-top: 15px;}
-                .menu a {font-size: 18px;}
-            }
-
-            /* Table style section */
-            table {
-                border: 1px solid indigo;
-                /*border-collapse: collapse;*/
-                padding: 5px;
-                width: 100%;
-
-            }
-
-            th, td {
-                border: 1px solid indigo;
-                border-collapse: collapse;
-                padding: 5px;
-            }
-
-        </style>
+    </style>
     </head>
 
     <body>
-        <div id="menu" class="menu">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">Home</a>
-            <button class="menu-button">Assignments</button>
-            <div class= "menu-list">
-                <a href="assignments.html">Assignments</a>
-                <a href="assignments.html">App Development</a>
+        <!-- Navigation bar -->
+        <nav class="navbar is-link is-fixed-top">
+            <div class="navbar-brand">
+            <div class="navbar-burger burger" data-target="menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <a href="index.html">About Me</a>
-        </div>
+            </div>
 
-        
-
-        <div class="header">
-            <button class="open-menu-button" onclick="openNav()" >
-                <div class="menu-icon"></div>
-                <div class="menu-icon"></div>
-                <div class="menu-icon"></div>
-            </button>
-            <div class="header-name">Assignments</div>
-        </div>
-
-        <div class="container">
-            <h1>Colin Monaghan's Assignments</h1>
-            <h2>Week 1: Building a website</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <td>#</td>
-                        <td>Assignment</td>
-                        <td>Link</td>
-                        <td>Time</td>
-                        <td>Difficulty (1-5)</td>
-                        <td>Usefulness (1-5)</td>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>1.1</td>
-                        <td>Watch tutorial 1</td>
-                        <td>N/A</td>
-                        <td>2 hours</td>
-                        <td>1</td>
-                        <td>4</td>
-                    </tr>
-
-                    <tr>
-                        <td>1.2</td>
-                        <td>Deploy a website to GitHub pages</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-
-                    <tr>
-                        <td>1.3</td>
-                        <td>Create your own assignments website</td>
-                        <td></td>
-                        <td>1 hour</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-
-                    <tr>
-                        <td>1.4</td>
-                        <td>Create a personal/professional/student website</td>
-                        <td></td>
-                        <td>1.5 hours</td>
-                        <td>3</td>
-                        <td>3</td>
-                    </tr>
-
-                    <tr>
-                        <td>1.5</td>
-                        <td>Create two screens of your first app</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-
-                    <tr>
-                        <td>1.6</td>
-                        <td>Create a side menu in CSS</td>
-                        <td></td>
-                        <td>3 hours</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-
-                    <tr>
-                        <td>1.A</td>
-                        <td>What did you like this week?</td>
-                        <td colspan="4"></td>
-                    </tr>
-
-                    <tr>
-                        <td>1.B</td>
-                        <td>What didn't you like this week?</td>
-                        <td colspan="4"></td>
-                    </tr>
-
-                    <tr>
-                        <td>1.C</td>
-                        <td>How can we improve the material from this week?</td>
-                        <td colspan="4"></td>
-                    </tr>
-
-                    <tr>
-                        <td>1.D</td>
-                        <td>Show us anything else you coded up this week!</td>
-                        <td colspan="4"></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+            <div id="menu" class="navbar-menu">
+            <div class="navbar-end has-dropdown">
+                <a class="navbar-item" href="../index.html">
+                <span class="icon">
+                    <i class="fas fa-info"></i>
+                </span>
+                <span>Home</span>
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                    Assignments
+                    </a>
+                    <div class="navbar-dropdown is-boxed">
+                    <a class="navbar-item" href="#week1">
+                        Week 1
+                    </a>
+                    <a class="navbar-item" href="#week2">
+                        Week 2
+                    </a>
+                    <a class="navbar-item" href="#week3">
+                        Week 3
+                    </a>
+                    <a class="navbar-item" href="#week4">
+                        Week 4
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
 
+        <!-- week 1 -->
+        <section class="section" id="week1">
+            <!-- Heading -->
+            <div class="section-heading">
+                <h3 class="title is-2">Week 1</h3>
+                <h4 class="subtitle is-3">Building a website</h4>
+            </div>
+            <!-- Body-->
+            <div class="container">
+                <table class="table is-bordered is-striped is-narrow">
+                    <thead>
+                        <tr>
+                            <td>#</td>
+                            <td>Assignment</td>
+                            <td>Link</td>
+                            <td>Time</td>
+                            <td>Difficulty (1-5)</td>
+                            <td>Usefulness (1-5)</td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1.1</td>
+                            <td>Watch tutorial 1</td>
+                            <td>N/A</td>
+                            <td>2 hours</td>
+                            <td>1</td>
+                            <td>4</td>
+                        </tr>
+
+                        <tr>
+                            <td>1.2</td>
+                            <td>Deploy a website to GitHub pages</td>
+                            <td><a href="../index.html">link</a></td>
+                            <td>0.5 hours</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+
+                        <tr>
+                            <td>1.3</td>
+                            <td>Create your own assignments website</td>
+                            <td><a href="assignments.html">link</a></td>
+                            <td>0.5 hours</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+
+                        <tr>
+                            <td>1.4</td>
+                            <td>Create a personal/professional/student website</td>
+                            <td><a href="../index.html">link</a></td>
+                            <td>1.5 hours</td>
+                            <td>3</td>
+                            <td>3</td>
+                        </tr>
+
+                        <tr>
+                            <td>1.5</td>
+                            <td>Create two screens of your first app</td>
+                            <td><a href="../running_book/runnerHome.html">link</a></td>
+                            <td>10ish hours</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+
+                        <tr>
+                            <td>1.6</td>
+                            <td>Create a side menu in CSS</td>
+                            <td></td>
+                            <td>3 hours</td>
+                            <td>4</td>
+                            <td>3</td>
+                        </tr>
+
+                        <tr>
+                            <td>1.A</td>
+                            <td>What did you like this week?</td>
+                            <td colspan="4">
+                                <p>
+                                    I am really proud of how my app looks. There are 
+                                    still a few things I want to fix and a couple 
+                                    screens I need to create, but it looks much more professional
+                                    than I expected it to look.
+                                </p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>1.B</td>
+                            <td>What didn't you like this week?</td>
+                            <td colspan="4">
+                                <p>
+                                    Earlier in the week, I spent a lot of time creating a personal website from scratch. 
+                                    Then after I had finished building the framework for it, I looked into bulma and realized I could 
+                                    make my site look much nicer using the bulma CSS, so after I recreated my personal website with Bulma, 
+                                    it felt like all the work I had put in before was wasted.
+                                </p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>1.C</td>
+                            <td>How can we improve the material from this week?</td>
+                            <td colspan="4">
+                                <p>
+                                    I thought your lectures this week were very helpful. 
+                                    I liked how you split the lecture up into titled sub-sections, then if 
+                                    I needed to go back and get a refresher, I knew which video to watch.    
+                                </p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>1.D</td>
+                            <td>Show us anything else you coded up this week!</td>
+                            <td colspan="4">
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="section" id="week2">
+            <!-- Heading -->
+            <div class="section-heading">
+                <h3 class="title is-2">Week 2</h3>
+                <h4 class="subtitle is-3"></h4>
+            </div>
+        </section>
+
+        <section class="section" id="week3">
+            <!-- Heading -->
+            <div class="section-heading">
+                <h3 class="title is-2">Week 3</h3>
+                <h4 class="subtitle is-3"></h4>
+            </div>
+        </section>
+
+        <section class="section" id="week4">
+            <!-- Heading -->
+            <div class="section-heading">
+                <h3 class="title is-2">Week 4</h3>
+                <h4 class="subtitle is-3"></h4>
+            </div>
+        </section>
     </body>
-
-    <script>
-        /* Set the width of the side navigation to 250px (or 100% on small windows)*/
-        function openNav() {
-            if(screen.width < 600) {
-                document.getElementById("menu").style.width = "100%";
-            }
-            else {
-                document.getElementById("menu").style.width = "250px";
-            }
-            
-        }
-
-        /* Set the width of the side navigation to 0 */
-        function closeNav() {
-            document.getElementById("menu").style.width = "0";
-
-        }
-
-        /* Toggle the dropdown list when the button is clicked */
-        var acc = document.getElementsByClassName("menu-button");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            /* Toggle between adding and removing the "active" class,
-            to highlight the button that controls the panel */
-            this.classList.toggle("active");
-
-            /* Toggle between hiding and showing the active panel */
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-            panel.style.display = "none";
-            } else {
-            panel.style.display = "block";
-            }
-        });
-}
-    </script>
 
 </html>
