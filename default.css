@@ -6,7 +6,54 @@
     font-size: 10;
   }
 
+/* Header Section */
+.header-container {
+  /*color: #5995DA;
+  background-color: #D6E9FE;*/
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 900px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+/* Page Section */
 
 section {
     border: 3%; /* for testing */
+}
+
+.page {
+  background-color: #D6E9FE;
+}
+
+
+
+
+.info-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.info-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.info-grid-item {
+  border: 1px solid #fff;
+  width: 300px;
+  height: 300px;
 }
