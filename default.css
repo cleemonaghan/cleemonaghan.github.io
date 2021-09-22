@@ -1,17 +1,15 @@
 /* Color Scheme
 Background: D6E9FE (Beau Blue)
-Boarders: 93827F (Cinerous)
-Primary: 4D6CFA (Neon Blue)
+Primary: 273469 (Space Cadet)
 
 Optional Colors:
 30343F (Gunmetal)
 35CE8D (Carubbean Green)
-273469 (Space Cadet)
+Boarders: 93827F (Cinerous)
 */
 :root {
-  --primary-color: #4D6CFA;
+  --primary-color: #273469;
   --background-color: #D6E9FE;
-  --boarder-color: #93827F;
 }
 
 * {
@@ -22,20 +20,30 @@ Optional Colors:
   font-size: 10;
 }
 
-p {
+@media only screen and (min-width: 580px) {
+  .textblock {
+    max-width: 100%;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+
+.textblock {
   margin: 20px;
   text-align: justify;
 }
 
+
+
 /* Header Section */
 .header-container {
-  /*color: #5995DA;
-  background-color: #D6E9FE;*/
   display: flex;
   justify-content: center;
 }
 
 .header {
+  color: var(--background-color);
+  background-color: var(--primary-color);
   width: 900px;
   height: 300px;
   display: flex;
@@ -55,6 +63,7 @@ section {
 
 .page {
   background-color: var(--background-color);
+  color: var(--primary-color);
 }
 
 
@@ -90,7 +99,7 @@ section {
 
 .profile-photo {
   margin: 10px;
-  border: 10px solid var(--boarder-color);
+  border: 10px solid var(--primary-color);
   display : inline-block;
   max-height: 379px;
 }
