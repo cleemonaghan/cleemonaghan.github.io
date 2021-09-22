@@ -109,5 +109,24 @@ body {
 }
 
 
+/* Footer Section */
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  border: 1px solid var(--background-color);
+  background-color: var(--background-color);
+  height: 200px;
+  flex: 1;
+}
+
+.footer-one,
+.footer-three {
+  background-color: var(--primary-color);
+  flex: initial;
+  width: 300px;
+}
 
 
