@@ -20,17 +20,12 @@ Boarders: 93827F (Cinerous)
   font-size: 10;
 }
 
-@media only screen and (min-width: 580px) {
-  .textblock {
-    max-width: 100%;
-    margin-left: 2em;
-    margin-right: 2em;
-  }
-}
-
 .textblock {
   margin: 20px;
   text-align: justify;
+  line-height: 2em;
+  text-indent: 1.5em;
+  margin: 2em;
 }
 
 
@@ -44,8 +39,8 @@ Boarders: 93827F (Cinerous)
 .header {
   color: var(--background-color);
   background-color: var(--primary-color);
-  width: 900px;
-  height: 300px;
+  width: 100%;
+  height: 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
