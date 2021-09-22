@@ -165,9 +165,18 @@
                 A title and short one-paragraph synopsis per project will be sufficient. -->
             <ul class="resume-lists">
                 <li>
-                    <h4></h4>
-                    <p>Implemented key components in C in a real OS kernel, including a ready queue, a robust CPU
-                        scheduler, synchronization mechanisms, and deadlock detection & recovery</p>
+                    <h4>Sorting Tasks</h4>
+                    <p>This project's goal is to find a valid ordering of a number of tasks using a directed graph. 
+                        It parses a .task file, that will be specified on the command line. The file will have n lines 
+                        will defining n different tasks. Each line of the file is a tab-separated list, where the first 
+                        token is some new task, and all remaining tokens are the other tasks that must be done prior to it. 
+                        Every listed task in the file will be the first task on exactly one line, and no task is directly dependent on itself.</p>
+                </li>
+                <li>
+                    <h4>Word Counter</h4>
+                    <p>This project uses a red-black tree to count the words inside of a text file, using a red-black tree.
+                        The program will count the frequencies of words in a given file and then gives a prompt asking 
+                        the user for words, for which it will give the frequency and other information.</p>
                 </li>
             </ul>
         </section>
@@ -176,7 +185,7 @@
         <section>
             <h1>Affiliations</h1>
             <!--List any academic clubs you might be a part of, including athletics and Greek life.-->
-            <ul>
+            <ul class="resume-lists">
                 <li>
                     <h4>Cross Country and Track & Field</h4>
                     <li>Facilitate communication between fellow athletes and coaches as a team captain</li>
