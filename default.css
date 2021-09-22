@@ -20,14 +20,16 @@ Boarders: 93827F (Cinerous)
   font-size: 10;
 }
 
-.textblock {
-  margin: 20px;
-  text-align: justify;
-  line-height: 2em;
-  text-indent: 1.5em;
-  margin: 2em;
+/*Lists*/
+
+ul li, ol li {
+  list-style-position: inside;
+  padding-left: 2.5em;
 }
 
+.resume-lists {
+  list-style-type: none;
+}
 
 
 /* Header Section */
@@ -51,9 +53,8 @@ Boarders: 93827F (Cinerous)
 
 /* Page Section */
 
-section {
-    border: 3%; /* for testing */
-    border-color: black;
+.page, section {
+    margin: 10px;
 }
 
 body {
@@ -61,8 +62,16 @@ body {
   color: var(--primary-color);
 }
 
+.textblock {
+  margin: 20px;
+  text-align: justify;
+  line-height: 2em;
+  text-indent: 1.5em;
+  margin: 2em;
+}
 
 
+/* Info Grid */
 
 .info-grid-container {
   padding: 3%;
