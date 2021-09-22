@@ -1,10 +1,31 @@
+/* Color Scheme
+Background: D6E9FE (Beau Blue)
+Boarders: 93827F (Cinerous)
+Primary: 4D6CFA (Neon Blue)
+
+Optional Colors:
+30343F (Gunmetal)
+35CE8D (Carubbean Green)
+273469 (Space Cadet)
+*/
+:root {
+  --primary-color: #4D6CFA;
+  --background-color: #D6E9FE;
+  --boarder-color: #93827F;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10;
+}
+
+p {
+  margin: 20px;
+  text-align: justify;
+}
 
 /* Header Section */
 .header-container {
@@ -29,31 +50,51 @@
 
 section {
     border: 3%; /* for testing */
+    border-color: black;
 }
 
 .page {
-  background-color: #D6E9FE;
+  background-color: var(--background-color);
 }
 
 
 
 
 .info-grid-container {
+  padding: 3%;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .info-grid {
-  width: 900px;
+  width: 90%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 .info-grid-item {
-  border: 1px solid #fff;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
+
+.flex-1 {
+  flex: 1;
+}
+.flex-2 {
+  flex: 2;
+}
+
+.profile-photo {
+  margin: 10px;
+  border: 10px solid var(--boarder-color);
+  display : inline-block;
+  max-height: 379px;
+}
+
+
+
+
