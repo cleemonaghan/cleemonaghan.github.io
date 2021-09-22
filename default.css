@@ -123,7 +123,10 @@ body {
 }
 
 .footer-one,
-.footer-three {
+.footer-three, 
+.footer-one a,
+.footer-three a{
+  color: var(--background-color);
   background-color: var(--primary-color);
   flex: initial;
   width: 300px;
